@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html>
+<title>Michael Bertolino's Web...site</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url("https://i.imgur.com/CoO8aQR.jpg");
+    min-height: 100%;
+}
+
+/* Second image (Projects) */
+.bgimg-2 {
+    background-image: url("https://i.imgur.com/b6y7ETQ.jpg");
+    min-height: 400px;
+}
+
+/* Third image (Photos) */
+.bgimg-3 {
+    background-image: url("https://i.imgur.com/zl7OGf3.jpg");
+    min-height: 400px;
+}
+
+/* Fourth image (Contact) */
+.bgimg-4 {
+    background-image: url("https://i.imgur.com/Pq2KXo2.jpg");
+    min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+        background-attachment: scroll;
+    }
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button w3-hide-small" style="color:black;"><i class="fa fa-home"></i> HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small" style="color:black;"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#projects" class="w3-bar-item w3-button w3-hide-small" style="color:black;"><i class="fa fa-th"></i> PROJECTS</a>
+    <a href="#photos" class="w3-bar-item w3-button w3-hide-small" style="color:black;"><i class="fa fa-camera"></i> PHOTOS</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small" style="color:black;"><i class="fa fa-envelope"></i> CONTACT</a>
+    </a>
+  </div>
+
+<!-- Navbar on small screens -->
+<div class="w3-top">
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#home1" class="w3-bar-item w3-button" onclick="toggleFunction()">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#projects" class="w3-bar-item w3-button" onclick="toggleFunction()">PROJECTS</a>
+    <a href="#photos" class="w3-bar-item w3-button" onclick="toggleFunction()">PHOTOS</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+  </div>
+</div>
+</div>
+
+<!-- (On Small Screens) First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-hide-large w3-hide-medium" id="home1">
+  <div class="w3-display-middle w3-center" style="white-space:pre;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge">Welcome To    <br>    Michael Bertolino's Website</span>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-hide-small" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge">Welcome To Michael Bertolino's Website</span>
+  </div>
+</div>
+
+<!-- Container (Foreward Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">FOREWARD</h3>
+  <p class="w3-center">This originally started off as a small project that I created in my IST 110 class, my first semester at college,
+    but has evolved into a passion project, which I am very proud to have made.
+  </p>
+  <p class="w3-center">All the pictures on this webpage were either taken with my Samsung Galaxy S6 Edge or my Samsung Galaxy S8.
+  </p>
+  <p class="w3-center"><em>Enjoy</em></p>
+
+<!--Script For Expanding Spotify-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("button").click(function() {
+        $("iframe").toggle("iframe");
+      });
+    });
+  </script>
+
+<!--Spotify Button Code-->
+  <div class="w3-center">
+    <button id="Spotify" class="w3-button w3-padding-large w3-light-grey" style="margin-top:25px; margin-bottom:25px">MUSIC FROM SPOTIFY</button>
+  </div>
+
+<!--(On Small Screens) Spotify URI-->
+  <div class="w3-center w3-hide-large w3-hide-medium">
+    <iframe src="https://open.spotify.com/embed?uri=spotify:user:1226190440:playlist:0SbjlLMhcGEx7qy5N03dfO&theme=white" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+  </div>
+
+<!--Spotify URI-->
+  <div class="w3-center w3-hide-small">
+    <iframe src="https://open.spotify.com/embed?uri=spotify:user:1226190440:playlist:0SbjlLMhcGEx7qy5N03dfO&theme=white" width="619" height="699" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+  </div>
+
+<!--Spotify styling-->
+  <head>
+  <style>
+    iframe {
+      display: none;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+  </head>
+
+<!-- Container (About Section) -->
+  <h3 class="w3-center">ABOUT ME</h3>
+  <p class="w3-center"><em>I love music, photography, and technology</em></p>
+  <p class="w3-center">
+    Technology has always been a part of my life. Around the age of 11, my cousin built his first gaming rig, with the help of his parents, and ever since then I have wanted to build my own too.
+    13 years later, I sit here typing the code for this website on a rig that I am happy to say I have built myself and that can demolish every task and game I present it with. At the age of 11, I received my first flip phone.
+    It was an LG pay-as-you-go phone on the service provide Kajeet.
+    Then, in 2009, my family switched to T-Mobile and I got the T-Mobile G1, the first Android phone ever, at the age of 12.
+    Though I did not know it yet, this would be the most influential moment of my entire life.
+    Ever since the day I got the G1, I have been fascinated with technology, specifially technology in the scientific and medical field, as well as technology in the consumer world such as cellphones and computers.
+  </p>
+  <p class="w3-center">
+    This led me to eventually apply to Penn State and get accepted into my major; Information, Sciences, and Technology, and Penn State simultaneously.
+    Currently, I am pursuing a BS in Integration and Application (ITINT), a Minor in Digital Entrepreneurship & Innovation, and am currently attending Penn State: University Park, having transferred from Penn State: Altoona after two years.
+  </p>
+  <p class="w3-center">
+    Ever since I can remember, I have been fascinated with pictures of space and our world,
+    so when I got my first phone with a fantastic camera, the Galaxy S6 Edge,
+    I immediately took it upon myself to capture amazing pictures of the beautiful world around us.
+    Though this is more of a passion of mine, photographing our world,
+    I would love to travel someday and bring my love for technology and the natural world together,
+    by capturing life's most beautiful moments. Now, with the Galaxy S8 in hand, I feel more than able to tackle this task.
+  </p>
+  <p class="w3-center">
+    In my free time I like to make music, as well as relax!
+    At the bottom of the page there will be an icon that links to my Soundcloud Profile.
+    Though I have not uploaded anything in almost two years, I still, very much, enjoy listening to music.
+    I especially enjoy listening to music when I'm longboarding and/or running, during my free time.
+  </p>
+
+    <div class="w3-row">
+      <div class="w3-col m12 w3-center w3-padding-large">
+        <p><b><i class="fa fa-user w3-margin-right"></i>Michael Bertolino</b></p><br>
+        <img src="https://i.imgur.com/bpK5Zs9.jpg" class="w3-round w3-image" alt="Photo of Me" width="500" height="333">
+      </div>
+    </div>
+
+<!--I'm really good at-->
+  <h3 class="w3-center">I'M REALLY GOOD AT:</h3>
+  <p class="w3-large"><i class="fa fa-desktop"></i> Building And Repairing Computers</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+  </div>
+  <p class="w3-large"><i class="fa fa-wrench"></i> Troubleshooting</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+  </div>
+  <p class="w3-large"><i class="fa fa-laptop"></i> Web Design</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:80%">80%</div>
+  </div>
+</div>
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">12+</span><br>
+    Computers Built, Designed, And Repaired
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">5</span><br>
+    Times I've Been On The Deans' List
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">21+</span><br>
+    Hours Spent Learning And Reading About Technology Per Week
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">75+</span><br>
+    Hours Spent Interacting With Technology Per Week
+  </div>
+</div>
+
+<!-- (On small screens) Third Parallax Image with Projects Text -->
+<div class="bgimg-2 w3-display-container w3-hide-large w3-hide-medium" style="margin-top: 64px">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">PROJECTS</span>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Projects Text -->
+<div class="bgimg-2 w3-display-container w3-hide-small">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">PROJECTS</span>
+  </div>
+</div>
+
+<!-- Container (Projects) -->
+<div class="w3-content w3-container w3-padding-64" id="projects">
+  <h3 class="w3-center">HERE ARE SOME OF THE COMPUTERS I HAVE BUILT AND OWN.</h3>
+  <p class="w3-center"><em>Click on the images to enlarge them</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3 w3-hide-small">
+      <img src="https://i.imgur.com/P67SQk1.jpg" style="width:100%; height: 150px" onclick="onClick(this)" class="w3-hover-opacity" alt="All The Parts In My Gaming Rig">
+    </div>
+
+    <div class="w3-col m3 w3-hide-small">
+      <img src="https://i.imgur.com/jFFfyfZ.jpg" style="width:100%; height: 150px" onclick="onClick(this)" class="w3-hover-opacity" alt="My Surface Book 2 15">
+    </div>
+
+    <div class="w3-col m3 w3-hide-small">
+      <img src="https://i.imgur.com/YrWwjYX.jpg" style="width:100%; height: 150px" onclick="onClick(this)" class="w3-hover-opacity" alt="My MSI GS60 Ghost Pro 4K-605">
+    </div>
+
+    <div class="w3-col m3 w3-hide-small">
+      <img style="width:100%; height: 150px" onclick="onClick(this)" class="w3-hover-opacity" alt="Friend's Budget Gaming Desktop (Will Upload Soon)">
+    </div>
+
+    <div class="w3-col m3 w3-hide-large w3-hide-medium">
+      <img src="https://i.imgur.com/P67SQk1.jpg" style="width:100%; height: 150px" onclick="onClick(this)" class="w3-hover-opacity" alt="All The Parts In My Gaming Rig">
+      <br></br>
+    </div>
+
+    <div class="w3-col m3 w3-hide-large w3-hide-medium">
+      <img src="https://i.imgur.com/jFFfyfZ.jpg" style="width:100%; height: 150px" onclick="onClick(this)" class="w3-hover-opacity" alt="My Surface Book 2 15">
+      <br></br>
+    </div>
+
+    <div class="w3-col m3 w3-hide-large w3-hide-medium">
+      <img src="https://i.imgur.com/YrWwjYX.jpg" style="width:100%; height: 150px" onclick="onClick(this)" class="w3-hover-opacity" alt="My MSI GS60 Ghost Pro 4K-605">
+      <br></br>
+    </div>
+
+    <div class="w3-col m3 w3-hide-large w3-hide-medium">
+      <img style="width:100%; height: 150px" onclick="onClick(this)" class="w3-hover-opacity" alt="Friend's Budget Gaming Desktop (Will Upload Soon)">
+      <br></br>
+    </div>
+
+    <div class="w3-col m3 w3-hide-large w3-hide-medium">
+      <img src="https://i.imgur.com/GDD3DS6.jpg" style="width:100%; height: 150px" onclick="onClick(this)" class="w3-hover-opacity" alt="My Gaming Rig Fully Assembled">
+      <br></br>
+    </div>
+
+    <div class="w3-col m3 w3-hide-large w3-hide-medium">
+      <img src="https://i.imgur.com/c8WPJTT.jpg" style="width:100%; height: 150px" onclick="onClick(this)" class="w3-hover-opacity" alt="My Surface Book 2 15 From The Front ft. A Snippet of My HTML Code">
+      <br></br>
+    </div>
+
+    <div class="w3-col m3 w3-hide-large w3-hide-medium">
+      <img src="https://i.imgur.com/rtKpsHg.jpg" style="width:100%; height: 150px" onclick="onClick(this)" class="w3-hover-opacity" alt="My MSI GS60 Ghost Pro 4K-605 From The Front ft. My Old PSU Personal Page">
+      <br></br>
+    </div>
+
+    <div class="w3-col m3 w3-hide-large w3-hide-medium">
+      <img style="width:100%; height: 150px" onclick="onClick(this)" class="w3-hover-opacity" alt="Friend's Budget Gaming Desktop (Will Upload Soon)">
+      <br></br>
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section w3-hide-small">
+    <div class="w3-col m3">
+      <img src="https://i.imgur.com/GDD3DS6.jpg" style="width:100%; height: 150px" onclick="onClick(this)" class="w3-hover-opacity" alt="My Gaming Rig Fully Assembled">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="https://i.imgur.com/c8WPJTT.jpg" style="width:100%; height: 150px" onclick="onClick(this)" class="w3-hover-opacity" alt="My Surface Book 2 15 From The Front ft. A Snippet of My HTML Code">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="https://i.imgur.com/rtKpsHg.jpg" style="width:100%; height: 150px" onclick="onClick(this)" class="w3-hover-opacity" alt="My MSI GS60 Ghost Pro 4K-605 From The Front ft. My Old PSU Personal Page">
+    </div>
+
+    <div class="w3-col m3">
+      <img style="width:100%; height: 150px" onclick="onClick(this)" class="w3-hover-opacity" alt="Friend's Budget Gaming Desktop (Will Upload Soon)">
+    </div>
+  </div>
+
+<!--Technical Specifications Button Script-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    $("button1").click(function(){
+          $("table").toggle("table");
+        });
+      });
+  </script>
+
+<!--Technical Specifications Button Code-->
+  <div class="w3-center">
+    <button1 id="TechSpecs" class="w3-button w3-padding-large w3-light-grey" style="margin-top:50px; margin-bottom:50px">TECHNICAL SPECIFICATIONS</button>
+  </div>
+
+<!--Technical Specifications Table Design-->
+
+    <head>
+    <style>
+    table {
+      display: none;
+    }
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 5px;
+    }
+    th {
+        color: black;
+        text-align: center;
+        background-color: lightgrey;
+    }
+    td {
+        background-color: white;
+    }
+    </style>
+    </head>
+
+<!--Technical Specifications Table-->
+    <table class="table table-hover" style="width:100%">
+      <tr>
+        <th align="center">Computer Parts</th>
+        <th align="center">Personal Gaming Rig</th>
+        <th align="center">Microsoft Surface Book 2</th>
+        <th align="center">MSI GS60 Ghost Pro 4K</th>
+        <th align="center">Friend's Gaming Rig</th>
+      </tr>
+      <tr>
+        <th align="center">CPU</th>
+        <td align="center">Intel Core i7-6700K</td>
+        <td align="center">Intel Core i7-8650U</td>
+        <td align="center">Intel Core i7-5700HQ</td>
+        <td align="center">Intel Core i7-7600K</td>
+      </tr>
+      <tr>
+        <th align="center">CPU Cooler</th>
+        <td align="center">NZXT Kraken X62 Liquid Cooler</td>
+        <td colspan="2" align="center">Internal Heatpipes</td>
+        <td align="center">NZXT Kraken X62 Liquid Cooler</td>
+      </tr>
+      <tr>
+        <th align="center">Motherboard</th>
+        <td align="center">MSI Z170A GAMING M9 ACK</td>
+        <td colspan="2" align="center">Proprietary</td>
+        <td align="center">MSI Z270 GAMING M7</td>
+      </tr>
+      <tr>
+        <th align="center">Memory</th>
+        <td align="center">G.SKILL Trident Z 16GB DDR4-3200MHz (CAS 14)</td>
+        <td align="center">Onboard Memory 16GB LPDDR3-1866MHz (Fixed)</td>
+        <td align="center">16GB DDR3L-1600MHz</td>
+        <td align="center">G.SKILL Ripjaw V 16GB DDR4-3000MHz (CAS 15)</td>
+      </tr>
+      <tr>
+        <th rowspan="2" align="center">Storage</th>
+        <td align="center">Samsung 960 Evo 250GB M.2 SSD</td>
+        <td align="center">256GB PCIe SSD</td>
+        <td align="center">128GB SATA M.2 SSD</td>
+        <td align="center">Samsung 960 Evo 250GB M.2 SSD</td>
+      <tr>
+        <td align="center">Seagate Barracuda 2TB 3.5" 7200 RPM HDD (ST2000DM006)</td>
+        <td align="center">N/A</td>
+        <td align="center">1TB 7200 RPM HDD</td>
+        <td align="center">Seagate Barracuda 2TB 3.5" 7200 RPM HDD (ST2000DM006)</td>
+      </tr>
+      </tr>
+      <tr>
+        <th rowspan="2" align="center">GPU</th>
+        <td align="center">MSI GTX 1070 Gaming Z 8GB</td>
+        <td align="center">GTX 1060 6GB</td>
+        <td align="center">GTX 970M 6GB</td>
+        <td align="center">GTX 1060 Gaming X 6GB</td>
+      </tr>
+      <tr>
+        <td align="center">N/A</td>
+        <td align="center">Intel HD Graphics 620</td>
+        <td align="center">N/A</td>
+        <td align="center">N/A</td>
+      </tr>
+      <tr>
+        <th align="center">Case/Chassis</th>
+        <td align="center">NZXT S340 Elite Black</td>
+        <td align="center">Magnesium</td>
+        <td align="center">Aluminum</td>
+        <td align="center">NZXT S340 Black</td>
+      </tr>
+      <tr>
+        <th align="center">Battery/Power Supply</th>
+        <td align="center">EVGA SuperNova T2 750W 80+ Titanium Fully Modular ATX PSU</td>
+        <td align="center">86Wh w/ 95W Surface Book Charger</td>
+        <td align="center">6 Cell w/ 150W AC Power Adapter</td>
+        <td align="center">EVGA B3 550W 80+ Bronze Fully Modular ATX PSU</td>
+      </tr>
+      <tr>
+        <th rowspan="2" align="center">Case Fan(s)</th>
+        <td align="center">Corsair ML 120 Pro w/ Red LEDs (120mm)(75.0 CFM)</td>
+        <td rowspan="2" align="center">N/A</td>
+        <td rowspan="2" align="center">N/A</td>
+        <td rowspan="2" align="center">Included Case Fans</td>
+      </tr>
+      <tr>
+        <td align="center">Corsair ML 140 Pro w/ RED LEDs (140mm)(97.0 CFM)</td>
+      <tr>
+        <th align="center">Display/Monitor</th>
+        <td align="center">ASUS MG24UQ 23.6" 3840x2160 60Hz Monitor</td>
+        <td align="center">15" PixelSense™ Display 3240x2160</td>
+        <td align="center">15.6" UHD+ 3840x2160 IPS (16:9)</td>
+        <td align="center">Had Monitor Beforehand</td>
+      </tr>
+      <tr>
+        <th align="center">Keyboard</th>
+        <td align="center">Logitech G810 Orion Spectrum RGB Wired Keyboard</td>
+        <td align="center"></td>
+        <td align="center">Steel Series Full-color backlight with Anti-Ghost key</td>
+        <td align="center">Had Keyboard Beforehand</td>
+      </tr>
+      <tr>
+        <th align="center">Mouse</th>
+        <td align="center">G603 LIGHTSPEED Wireless Gaming Mouse</td>
+        <td align="center">Glass w/ Windows Precision Drivers</td>
+        <td align="center">ELAN</td>
+        <td align="center">Had Mouse Beforehand</td>
+      </tr>
+	</tr></table>
+  </div>
+
+<!-- Second Parallax Image with Photos Text -->
+<div class="bgimg-3 w3-display-container">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">PHOTOS</span>
+  </div>
+</div>
+
+<!-- Container (Photos Section) -->
+<div class="w3-content w3-container w3-padding-64" id="photos">
+  <h3 class="w3-center">HERE ARE SOME OF MY FAVORITE PICTURES I'VE TAKEN.</h3>
+  <p class="w3-center"><em>Click on the images to enlarge them</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3 w3-hide-small">
+      <img src="https://i.imgur.com/b3CprP1.jpg" style="width:100%; height: 150px" onclick="onClick(this)" class="w3-hover-opacity" alt="Bliss">
+    </div>
+
+    <div class="w3-col m3 w3-hide-small">
+      <img src="https://i.imgur.com/SbBiFuu.jpg" style="width:100%; height: 150px" onclick="onClick(this)" class="w3-hover-opacity" alt="Jellyfish">
+    </div>
+
+    <div class="w3-col m3 w3-hide-small">
+      <img src="https://i.imgur.com/UmxOTFO.jpg" style="width:100%; height: 150px" onclick="onClick(this)" class="w3-hover-opacity" alt="8 AM Classes Don't Suck After All">
+    </div>
+
+    <div class="w3-col m3 w3-hide-small">
+      <img src="https://i.imgur.com/XCZ5i97.jpg" style="width:100%; height: 150px" onclick="onClick(this)" class="w3-hover-opacity" alt="Perks of Sticking Around After The Penn State Football Games">
+    </div>
+
+<!--Padding On Small Screens-->
+    <div class="w3-col m3 w3-hide-large w3-hide-medium">
+      <img src="https://i.imgur.com/b3CprP1.jpg" style="width:100%; height: 150px" onclick="onClick(this)" class="w3-hover-opacity" alt="Bliss">
+      <br></br>
+    </div>
+
+    <div class="w3-col m3 w3-hide-large w3-hide-medium">
+      <img src="https://i.imgur.com/SbBiFuu.jpg" style="width:100%; height: 150px" onclick="onClick(this)" class="w3-hover-opacity" alt="Jellyfish">
+      <br></br>
+    </div>
+
+    <div class="w3-col m3 w3-hide-large w3-hide-medium">
+      <img src="https://i.imgur.com/UmxOTFO.jpg" style="width:100%; height: 150px" onclick="onClick(this)" class="w3-hover-opacity" alt="8 AM Classes Don't Suck After All">
+      <br></br>
+    </div>
+
+    <div class="w3-col m3 w3-hide-large w3-hide-medium">
+      <img src="https://i.imgur.com/XCZ5i97.jpg" style="width:100%; height: 150px" onclick="onClick(this)" class="w3-hover-opacity" alt="Perks of Sticking Around After The Penn State Football Games">
+      <br></br>
+    </div>
+
+    <div class="w3-col m3 w3-hide-large w3-hide-medium">
+      <img src="https://i.imgur.com/UjyxtmT.jpg" style="width:100%; height: 150px" onclick="onClick(this)" class="w3-hover-opacity" alt="Sunset In Ocean City, Maryland">
+      <br></br>
+    </div>
+
+    <div class="w3-col m3 w3-hide-large w3-hide-medium">
+      <img src="http://i.imgur.com/gkcI5jh.jpg" style="width:100%; height: 150px" onclick="onClick(this)" class="w3-hover-opacity" alt="Tranquility">
+      <br></br>
+    </div>
+
+    <div class="w3-col m3 w3-hide-large w3-hide-medium">
+      <img src="https://i.imgur.com/scdMHo9.jpg" style="width:100%; height: 150px" onclick="onClick(this)" class="w3-hover-opacity" alt="Sunset On The Fourth of July">
+      <br></br>
+    </div>
+
+    <div class="w3-col m3 w3-hide-large w3-hide-medium">
+      <img src="https://i.imgur.com/glSWlWC.jpg" style="width:100%; height: 150px" onclick="onClick(this)" class="w3-hover-opacity" alt="First Date//First Sunset Together">
+      <br></br>
+    </div>
+  </div>
+
+<!--Responsive Grid On Large Screens (cont.)-->
+  <div class="w3-row-padding w3-center w3-section w3-hide-small">
+    <div class="w3-col m3">
+      <img src="https://i.imgur.com/UjyxtmT.jpg" style="width:100%; height: 150px" onclick="onClick(this)" class="w3-hover-opacity" alt="Sunset In Ocean City, Maryland">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="http://i.imgur.com/gkcI5jh.jpg" style="width:100%; height: 150px" onclick="onClick(this)" class="w3-hover-opacity" alt="Tranquility">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="https://i.imgur.com/scdMHo9.jpg" style="width:100%; height: 150px" onclick="onClick(this)" class="w3-hover-opacity" alt="Sunset On The Fourth of July">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="https://i.imgur.com/glSWlWC.jpg" style="width:100%; height: 150px" onclick="onClick(this)" class="w3-hover-opacity" alt="First Date//First Sunset Together">
+    </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Fourth Parallax Image with How To Contact Me Text -->
+<br></br>
+<div class="bgimg-4 w3-display-container">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">HOW TO CONTACT ME</h3>
+  <p class="w3-center"><em>I'd love feedback on my website!</em></p>
+
+  <div class="w3-section">
+    <div class="w3-col m4 w3-container">
+      <!-- Add Google Maps -->
+      <div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:400px;"></div>
+    </div>
+
+
+<!-- (On small screen) Contact Info -->
+  <div class="w3-col m8 w3-panel w3-hide-large w3-hide-medium">
+    <div class="w3-large w3-margin-bottom w3-center">
+      <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-center"></i> Harrisburg, PA<br>
+      <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-center"></i> 571-315-0848<br>
+      <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-center"></i> Personal:<br> mbertolino9@gmail.com<br>
+      <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-center"></i> Penn State:<br> msb5562@psu.edu<br>
+    </div>
+    <p class="w3-center">Leave feedback here:</p>
+    <form action="https://formspree.io/mbertolino9@gmail.com" method="post">
+      <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+        <div class="w3-half">
+          <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+        </div>
+        <div class="w3-half">
+          <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+        </div>
+        <div class="w3-half">
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        </div>
+      </div>
+      <button class="w3-button w3-black w3-section" style="margin-left: 100px" type="submit">
+        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+      </button>
+    </form>
+  </div>
+</div>
+
+<style>
+#wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    float: right;
+}
+</style>
+
+<!-- Contact Info -->
+<div  id="wrapper" class="w3-col m8 w3-panel w3-hide-small">
+  <div class="w3-large w3-margin-bottom">
+    <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Harrisburg, PA<br>
+    <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> 571-315-0848<br>
+    <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> mbertolino9@gmail.com (Personal)<br>
+<i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> msb5562@psu.edu (Penn State)<br>
+  </div>
+  <p>Leave feedback here:</p>
+  <form action="https://formspree.io/mbertolino9@gmail.com" method="post">
+    <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+      <div class="w3-half">
+        <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+      </div>
+      <div class="w3-half">
+        <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+      </div>
+    </div>
+    <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+    <button class="w3-button w3-black w3-right w3-section" type="submit">
+      <i class="fa fa-paper-plane"></i> SEND MESSAGE
+    </button>
+  </form>
+</div>
+</div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey w3-hide-small"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <a href="#home1" class="w3-button w3-light-grey w3-hide-large w3-hide-medium"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <a href="https://www.instagram.com/Michael_Bertolino" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/in/mbertolino/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    <a href="https://docs.google.com/document/d/1kkUmSZrMdxzomlRBwBakt6ZRwa6Byas116sbeAYc048/edit?usp=sharing" target="_blank"><i class="fa fa-file-text w3-hover-opacity"></i></a>
+    <a href="https://www.snapchat.com/add/MikeBert97" target="_blank"><i class="fa fa-snapchat w3-hover-opacity"></i></a>
+    <a href="https://www.soundcloud.com/official-electrix" target="_blank"><i class="fa fa-soundcloud w3-hover-opacity"></i></a>
+    <a href="https://open.spotify.com/user/1226190440?si=kp3XkoE9QQu8QqTSJEtcoA" target="_blank"><i class="fa fa-spotify w3-hover-opacity"></i></a>
+    <a href="https://steamcommunity.com/id/theshadows97/" target="_blank"><i class="fa fa-steam w3-hover-opacity"></i></a>
+  </div>
+  <p><a title="Website up to date as of 6/16/18 @ 12:12 PM EST" class="w3-hover-text-green">
+  Website up to date as of 6/16/18 @ 12:12 PM EST</a></p>
+</footer>
+
+<!-- Add Google Maps -->
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(40.2612137,-76.881732);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdxwLQjCUcnJkKwFVBhtG13yQ3JjHENpk&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</div></body>
+</html>
+
+<!--Changelog
+// Version 1.01 (5/4/18):
+// Added Changelog
+// Updated "Web Design" skill percentage
+// Fixed text in "About Me" to be centered, as it wasn't before
+// Added a Break before the "Contact" Parallax
+// Version 1.02 (6/13/18)
+// Updated information to reflect Spring, 2018 semester of college and Summer, 2018 internship with KPMG
+// Version 1.03 (6/16/18)
+// Updated Playlist to Lo-Fi Hip Hop
+-->

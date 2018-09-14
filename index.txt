@@ -15,7 +15,7 @@ body, html {
 }
 
 /* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -40,8 +40,14 @@ body, html {
     min-height: 400px;
 }
 
-/* Fourth image (Contact) */
+/* Fourth image (Portfolio)) */
 .bgimg-4 {
+    background-image: url("https://imgur.com/BE4aFJH.jpg");
+    min-height: 400px;
+}
+
+/* Fifth image (Contact) */
+.bgimg-5 {
     background-image: url("https://i.imgur.com/Pq2KXo2.jpg");
     min-height: 400px;
 }
@@ -51,7 +57,7 @@ body, html {
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
         background-attachment: scroll;
     }
 }
@@ -218,14 +224,14 @@ body, html {
   </div>
 </div>
 
-<!-- (On small screens) Third Parallax Image with Projects Text -->
+<!-- (On small screens) Second Parallax Image with Projects Text -->
 <div class="bgimg-2 w3-display-container w3-hide-large w3-hide-medium" style="margin-top: 64px">
   <div class="w3-display-middle">
      <span class="w3-xxlarge w3-text-white w3-wide">PROJECTS</span>
   </div>
 </div>
 
-<!-- Third Parallax Image with Projects Text -->
+<!-- Second Parallax Image with Projects Text -->
 <div class="bgimg-2 w3-display-container w3-hide-small">
   <div class="w3-display-middle">
      <span class="w3-xxlarge w3-text-white w3-wide">PROJECTS</span>
@@ -462,7 +468,7 @@ body, html {
 	</tr></table>
   </div>
 
-<!-- Second Parallax Image with Photos Text -->
+<!-- Third Parallax Image with Photos Text -->
 <div class="bgimg-3 w3-display-container">
   <div class="w3-display-middle">
     <span class="w3-xxlarge w3-text-white w3-wide">PHOTOS</span>
@@ -563,8 +569,8 @@ body, html {
   </div>
 </div>
 
-<!-- Third Parallax Image with Photos Text -->
-<div class="bgimg-3 w3-display-container">
+<!-- Fourth Parallax Image with Photos Text -->
+<div class="bgimg-4 w3-display-container">
   <div class="w3-display-middle">
     <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
   </div>
@@ -586,9 +592,9 @@ body, html {
   </div>
 </div>
 
-<!-- Fourth Parallax Image with How To Contact Me Text -->
+<!-- Fifth Parallax Image with How To Contact Me Text -->
 <br></br>
-<div class="bgimg-4 w3-display-container">
+<div class="bgimg-5 w3-display-container">
   <div class="w3-display-middle">
      <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
   </div>
@@ -682,8 +688,8 @@ body, html {
     <a href="https://open.spotify.com/user/1226190440?si=kp3XkoE9QQu8QqTSJEtcoA" target="_blank" title="Spotify"><i class="fa fa-spotify w3-hover-opacity"></i></a>
     <a href="https://steamcommunity.com/id/theshadows97/" target="_blank" title="Steam"><i class="fa fa-steam w3-hover-opacity"></i></a>
   </div>
-  <p><a title="Website up to date as of 8/31/18 @ 10:30 AM EST" class="w3-hover-text-green">
-  Website up to date as of 8/31/18 @ 10:30 AM EST</a></p>
+  <p><a title="Website up to date as of 9/14/18 @ 2:36 PM EST" class="w3-hover-text-green">
+  Website up to date as of 9/14/18 @ 2:36 PM EST</a></p>
 </footer>
 
 <!-- Add Google Maps -->
@@ -762,4 +768,7 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 // Version 1.06 (9/14/18)
 // Updated Location to "State College" on Mobile Devices
 // Added "Portfolio" section for IST 402
+// Changed Background for "Portfolio" <section>
+// Updated image parallax's and background image tags to reflect new "Portfolio" section
+</section>
 -->

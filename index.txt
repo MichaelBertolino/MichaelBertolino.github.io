@@ -106,9 +106,9 @@ body, html {
   </div>
 </div>
 
-<!-- Container (Foreward Section) -->
+<!-- Container (Forward Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">FOREWARD</h3>
+  <h3 class="w3-center">FORWARD</h3>
   <p class="w3-center">This originally started off as a small project that I created in my IST 110 class, my first semester at college,
     but has evolved into a passion project, which I am very proud to have made.
   </p>
@@ -161,7 +161,7 @@ body, html {
     It was an LG pay-as-you-go phone on the service provide Kajeet.
     Then, in 2009, my family switched to T-Mobile and I got the T-Mobile G1, the first Android phone ever, at the age of 12.
     Though I did not know it yet, this would be the most influential moment of my entire life.
-    Ever since the day I got the G1, I have been fascinated with technology, specifially technology in the scientific and medical field, as well as technology in the consumer world such as cellphones and computers.
+    Ever since the day I got the G1, I have been fascinated with technology, specifically technology in the scientific and medical field, as well as technology in the consumer world such as cellphones and computers.
   </p>
   <p class="w3-center">
     This led me to eventually apply to Penn State and get accepted into my major; Information, Sciences, and Technology, and Penn State simultaneously.
@@ -599,7 +599,7 @@ body, html {
           <p> 3 </p>
           <p><b> Key Insights From The Interviews </b></p>
           <p> All three participants said that it is more convenient to buy things on their phone, rather than on their computer.
-          Unsuprisingly, all three participants spend the majority of their money on Amazon.</p>
+          Unsurprisingly, all three participants spend the majority of their money on Amazon.</p>
     </div>
   </div>
 </div>

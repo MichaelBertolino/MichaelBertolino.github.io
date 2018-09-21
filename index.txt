@@ -106,9 +106,9 @@ body, html {
   </div>
 </div>
 
-<!-- Container (Forward Section) -->
+<!-- Container (Foreward Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">FORWARD</h3>
+  <h3 class="w3-center">FOREWARD</h3>
   <p class="w3-center">This originally started off as a small project that I created in my IST 110 class, my first semester at college,
     but has evolved into a passion project, which I am very proud to have made.
   </p>
@@ -783,5 +783,6 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 // Changed Background for "Portfolio" <section>
 // Updated image parallax's and background image tags to reflect new "Portfolio" section
 // Added info for Individual Project #1
+// Fixed some spelling mistakes
 </section>
 -->

@@ -572,16 +572,26 @@ body, html {
 <!-- Fourth Parallax Image with Photos Text -->
 <div class="bgimg-4 w3-display-container">
   <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+    <span class=" w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
   </div>
 </div>
 
+<!--Script For Expanding Individual Project #1 Information-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("button2").click(function() {
+        $("#IndividualProject1").toggle("#IndividualProject1");
+      });
+    });
+  </script>
+
 <!-- Container (Portfolio) -->
-<div class="w3-content w3-container w3-padding-64" id="portfolio">
+<div class=" w3-content w3-container w3-padding-64" id="portfolio">
   <h3 class="w3-center">HERE ARE THE PROJECT(S) I HAVE WORKED ON IN IST 402.</h3>
     <div class=" w3-center">
-      <p><b><em> Individual Project #1 </em></b></p>
-        <div class="w3-border">
+      <p><button2 class="w3-button w3-padding-large w3-light-grey" style="margin-top:25px; margin-bottom:25px">INDIVIDUAL PROJECT #1</button></p>
+        <div id="IndividualProject1" class="w3-border content" style="display:none">
           <p><b> Study Goal </b></p>
           <p> How can companies increase the amount of items bought by college students on mobile devices?
             Students have a relatively low budget to work with as most don’t have a stable source of income or they work at relatively low paying jobs, so companies don’t want to alienate an entire potential group of customers, only because they don’t have a lot of disposable income.
@@ -700,8 +710,8 @@ body, html {
     <a href="https://open.spotify.com/user/1226190440?si=kp3XkoE9QQu8QqTSJEtcoA" target="_blank" title="Spotify"><i class="fa fa-spotify w3-hover-opacity"></i></a>
     <a href="https://steamcommunity.com/id/theshadows97/" target="_blank" title="Steam"><i class="fa fa-steam w3-hover-opacity"></i></a>
   </div>
-  <p><a title="Website up to date as of 9/21/18 @ 10:37 AM PM EST" class="w3-hover-text-green">
-  Website up to date as of 9/21/18 @ 10:37 AM PM EST</a></p>
+  <p><a title="Website up to date as of 9/23/18 @ 6:05 PM EST" class="w3-hover-text-green">
+  Website up to date as of 9/23/18 @ 6:05 PM EST</a></p>
 </footer>
 
 <!-- Add Google Maps -->
@@ -779,10 +789,13 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 // Added Titles to links at bottom of page when hovering over them
 // Version 1.06 (9/14/18)
 // Updated Location to "State College" on Mobile Devices
+// Version 1.07
 // Added "Portfolio" section for IST 402
 // Changed Background for "Portfolio" <section>
 // Updated image parallax's and background image tags to reflect new "Portfolio" section
 // Added info for Individual Project #1
 // Fixed some spelling mistakes
+// Version 1.08
+// Changed "Portfolio" section to a drop-down to save space on webpage
 </section>
 -->

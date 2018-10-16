@@ -586,6 +586,16 @@ body, html {
     });
   </script>
 
+<!--Script For Expanding Individual Project #1 Information-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("button3").click(function() {
+        $("#IndividualProject2").toggle("#IndividualProject2");
+      });
+    });
+  </script>
+
 <!-- Container (Portfolio) -->
 <div class=" w3-content w3-container w3-padding-64" id="portfolio">
   <h3 class="w3-center">HERE ARE THE PROJECT(S) I HAVE WORKED ON IN IST 402.</h3>
@@ -627,6 +637,23 @@ body, html {
               They don’t have to worry about finding a way to get off campus to buy items and they can always count on Amazon having the lowest prices for products.
           </p>
     </div>
+    <p><button3 class="w3-button w3-padding-large w3-light-grey" style="margin-top:25px; margin-bottom:25px">INDIVIDUAL PROJECT #2</button></p>
+      <div id="IndividualProject2" class="w3-border content" style="display:none">
+        <p class="w3-large"><b> Study Goal </b></p>
+        <p> Right now, Augmented Reality (AR) is not that advanced.
+            Microsoft is working on the Hololens, which incorporates Virtual Reality (VR) and AR into a headset that people can wear and it will make all of your interactions similar to how Jarvis works in Iron Man.
+            The Hololens is for the future though and as of right now, there aren’t very many use cases for AR.
+            I am looking for a way to expand the use cases of AR and gather people’s ideas, so they can develop more apps and games for VR together.
+            This app would allow like minded people to come together and work towards the goal of progressing AR.</p>
+        <p class="w3-large"><b> Target Audience </b></p>
+        <p> My Target Audience is developers who have worked with AR in the past or are looking to work with AR in the future, because they see a potential use case for it that other people may not.
+            My Target Audience is also extended to people who are interested in learning more about AR and that may have ideas about the possibilities of AR, but don’t have the knowledge or skills to create their ideas.
+            They can work with developers, via the app, that have experience with AR or that are just getting into AR to make their ideas come to life.</p>
+        <p class="w3-large"><b> Personas </b></p>
+        <p> </p>
+        <p class="w3-large"><b> Design </b></p>
+        <p> </p>
+  </div>
   </div>
 </div>
 
@@ -726,8 +753,8 @@ body, html {
     <a href="https://open.spotify.com/user/1226190440?si=kp3XkoE9QQu8QqTSJEtcoA" target="_blank" title="Spotify"><i class="fa fa-spotify w3-hover-opacity"></i></a>
     <a href="https://steamcommunity.com/id/theshadows97/" target="_blank" title="Steam"><i class="fa fa-steam w3-hover-opacity"></i></a>
   </div>
-  <p><a title="Website up to date as of 9/24/18 @ 8:24 PM EST" class="w3-hover-text-green">
-  Website up to date as of 9/24/18 @ 8:24 PM EST</a></p>
+  <p><a title="Website up to date as of 10/16/18 @ 3:08 PM EST" class="w3-hover-text-green">
+  Website up to date as of 10/16/18 @ 3:08 PM EST</a></p>
 </footer>
 
 <!-- Add Google Maps -->
@@ -813,5 +840,7 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 // Fixed some spelling mistakes
 // Version 1.08
 // Changed "Portfolio" section to a drop-down to save space on webpage
+// Version 1.09
+// Added info for Individual Project #2
 </section>
 -->

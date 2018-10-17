@@ -120,24 +120,34 @@ body, html {
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script>
     $(document).ready(function() {
-      $("button").click(function() {
-        $("iframe").toggle("iframe");
+      $("button4").click(function() {
+        $("#Spotify").toggle("#Spotify");
       });
     });
   </script>
 
+  <!--Script For Expanding Spotify On Small Screens-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("button4").click(function() {
+          $("#SpotifySmall").toggle("#SpotifySmall");
+        });
+      });
+    </script>
+
 <!--Spotify Button Code-->
   <div class="w3-center">
-    <button id="Spotify" class="w3-button w3-padding-large w3-light-grey" style="margin-top:25px; margin-bottom:25px">MUSIC FROM SPOTIFY</button>
+    <button4 class="w3-button w3-padding-large w3-light-grey" style="margin-top:25px; margin-bottom:25px">MUSIC FROM SPOTIFY</button>
   </div>
 
 <!--(On Small Screens) Spotify URI-->
-  <div class="w3-center w3-hide-large w3-hide-medium">
+  <div id="SpotifySmall" class="w3-center w3-hide-large w3-hide-medium" style="display:none">
     <iframe src="https://open.spotify.com/embed?uri=spotify:user:1226190440:playlist:0SbjlLMhcGEx7qy5N03dfO&theme=white" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
   </div>
 
 <!--Spotify URI-->
-  <div class="w3-center w3-hide-small">
+  <div id="Spotify" class="w3-center w3-hide-small" style="display:none">
     <iframe src="https://open.spotify.com/embed?uri=spotify:user:1226190440:playlist:0SbjlLMhcGEx7qy5N03dfO&theme=white" width="619" height="699" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
   </div>
 
@@ -145,7 +155,6 @@ body, html {
   <head>
   <style>
     iframe {
-      display: none;
       margin-left: auto;
       margin-right: auto;
     }
@@ -173,7 +182,7 @@ body, html {
     I immediately took it upon myself to capture amazing pictures of the beautiful world around us.
     Though this is more of a passion of mine, photographing our world,
     I would love to travel someday and bring my love for technology and the natural world together,
-    by capturing life's most beautiful moments. Now, with the Galaxy S8 in hand, I feel more than able to tackle this task.
+    by capturing life's most beautiful moments. Now, with the iPhone XS in hand, I feel more than able to tackle this task.
   </p>
   <p class="w3-center">
     In my free time I like to make music, as well as relax!
@@ -637,6 +646,7 @@ body, html {
               They don’t have to worry about finding a way to get off campus to buy items and they can always count on Amazon having the lowest prices for products.
           </p>
     </div>
+
     <p><button3 class="w3-button w3-padding-large w3-light-grey" style="margin-top:25px; margin-bottom:25px">INDIVIDUAL PROJECT #2</button></p>
       <div id="IndividualProject2" class="w3-border content" style="display:none">
         <p class="w3-large"><b> Study Goal </b></p>
@@ -650,9 +660,17 @@ body, html {
             My Target Audience is also extended to people who are interested in learning more about AR and that may have ideas about the possibilities of AR, but don’t have the knowledge or skills to create their ideas.
             They can work with developers, via the app, that have experience with AR or that are just getting into AR to make their ideas come to life.</p>
         <p class="w3-large"><b> Personas </b></p>
-        <p> </p>
+        <p> <img width="900" height="600" src="https://i.imgur.com/WVQ0B7h.png">
+            <img width="900" height="600" src="https://i.imgur.com/YKa0jv2.png">
+        </p>
         <p class="w3-large"><b> Design </b></p>
-        <p> </p>
+        <p><p><b> Screenshots of Prototype: </b></p>
+            <img width="900" height="900" src="https://i.imgur.com/MpCKQvO.png">
+        </p>
+        <p>
+        <p><p><b> Prototype: </b></p>
+            <iframe width="375" height="667" src="https://xd.adobe.com/embed/19b36504-c887-4d4e-4ddf-86b7dc44a027-6f82/" frameborder="0" allowfullscreen></iframe>
+        </p>
   </div>
   </div>
 </div>
@@ -753,8 +771,8 @@ body, html {
     <a href="https://open.spotify.com/user/1226190440?si=kp3XkoE9QQu8QqTSJEtcoA" target="_blank" title="Spotify"><i class="fa fa-spotify w3-hover-opacity"></i></a>
     <a href="https://steamcommunity.com/id/theshadows97/" target="_blank" title="Steam"><i class="fa fa-steam w3-hover-opacity"></i></a>
   </div>
-  <p><a title="Website up to date as of 10/16/18 @ 3:08 PM EST" class="w3-hover-text-green">
-  Website up to date as of 10/16/18 @ 3:08 PM EST</a></p>
+  <p><a title="Website up to date as of 10/17/18 @ 2:05 PM EST" class="w3-hover-text-green">
+  Website up to date as of 10/17/18 @ 2:05 PM EST</a></p>
 </footer>
 
 <!-- Add Google Maps -->
@@ -840,7 +858,9 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 // Fixed some spelling mistakes
 // Version 1.08
 // Changed "Portfolio" section to a drop-down to save space on webpage
-// Version 1.09
+// Version 1.09 (10/16/18)
 // Added info for Individual Project #2
+// Version 1.10 (10/17/18)
+// Cleaned up Spotify Button code
 </section>
 -->

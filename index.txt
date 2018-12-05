@@ -708,7 +708,7 @@ body, html {
           </p>
         <p class="w3-large"><b> First App Design </b></p>
           <p>
-            <iframe width="375" height="667" src="https://xd.adobe.com/view/f0d39b8b-14d9-42f0-6536-5134df77562b-86e2/" frameborder="0" allowfullscreen></iframe>
+            <iframe width="375" height="667" src="https://xd.adobe.com/embed/f0d39b8b-14d9-42f0-6536-5134df77562b-86e2/" frameborder="0" allowfullscreen></iframe>
           </p>
         <p class="w3-large"><b> Evalution Findings </b></p>
           <p>
@@ -717,7 +717,7 @@ body, html {
           </p>
         <p class="w3-large"><b> App Redesign </b></p>
           <p>
-            <iframe width="375" height="667" src="https://xd.adobe.com/view/1805a570-bd5c-401e-4a8b-063251191ac8-6e34/" frameborder="0" allowfullscreen></iframe>
+            <iframe width="375" height="667" src="https://xd.adobe.com/embed/1805a570-bd5c-401e-4a8b-063251191ac8-6e34/" frameborder="0" allowfullscreen></iframe>
           </p>
        </div>
   </div>

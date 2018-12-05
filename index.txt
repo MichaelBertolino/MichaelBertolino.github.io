@@ -819,8 +819,8 @@ body, html {
     <a href="https://open.spotify.com/user/1226190440?si=kp3XkoE9QQu8QqTSJEtcoA" target="_blank" title="Spotify"><i class="fa fa-spotify w3-hover-opacity"></i></a>
     <a href="https://steamcommunity.com/id/theshadows97/" target="_blank" title="Steam"><i class="fa fa-steam w3-hover-opacity"></i></a>
   </div>
-  <p><a title="Website up to date as of 10/17/18 @ 2:05 PM EST" class="w3-hover-text-green">
-  Website up to date as of 10/17/18 @ 2:05 PM EST</a></p>
+  <p><a title="Website up to date as of 12/4/18 @ 7:07 PM EST" class="w3-hover-text-green">
+  Website up to date as of 12/4/18 @ 7:07 PM EST</a></p>
 </footer>
 
 <!-- Add Google Maps -->

@@ -216,11 +216,11 @@ body, html {
 
 <div class="w3-row w3-center w3-dark-grey w3-padding-16">
   <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">12+</span><br>
+    <span class="w3-xlarge">15+</span><br>
     Computers Built, Designed, And Repaired
   </div>
   <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">5</span><br>
+    <span class="w3-xlarge">6</span><br>
     Times I've Been On The Deans' List
   </div>
   <div class="w3-quarter w3-section">
@@ -823,8 +823,8 @@ body, html {
     <a href="https://open.spotify.com/user/1226190440?si=kp3XkoE9QQu8QqTSJEtcoA" target="_blank" title="Spotify"><i class="fa fa-spotify w3-hover-opacity"></i></a>
     <a href="https://steamcommunity.com/id/theshadows97/" target="_blank" title="Steam"><i class="fa fa-steam w3-hover-opacity"></i></a>
   </div>
-  <p><a title="Website up to date as of 12/5/18 @ 11:44 AM EST" class="w3-hover-text-green">
-  Website up to date as of 12/5/18 @ 11:44 AM EST</a></p>
+  <p><a title="Website up to date as of 3/25/19 @ 11:07 AM EST" class="w3-hover-text-green">
+  Website up to date as of 3/25/19 @ 11:07 AM EST</a></p>
 </footer>
 
 <!-- Add Google Maps -->
@@ -917,5 +917,7 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 // Version 1.11 (12/5/18)
 // Added section for Group Project
 // Added info for Group Project
+// Version 1.12 (3/25/19)
+// Updated Quick Look Info
 </section>
 -->

@@ -817,14 +817,14 @@ body, html {
   <div class="w3-xlarge w3-section">
     <a href="https://www.instagram.com/Michael_Bertolino" target="_blank" title="Instagram"><i class="fa fa-instagram w3-hover-opacity"></i></a>
     <a href="https://www.linkedin.com/in/mbertolino/" target="_blank" title="LinkedIn"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-    <a href="https://drive.google.com/file/d/1I0o-si4lj0zWfPH3oI-nutmAHi40Lk21/view?usp=sharing" target="_blank" title="Resume"><i class="fa fa-file-text w3-hover-opacity"></i></a>
+    <a href="https://docs.google.com/document/d/1V5znflisTFTBK1PBiutLLoroyUHGUY7A2C1BiNFZyoY/edit?usp=sharing" target="_blank" title="Resume"><i class="fa fa-file-text w3-hover-opacity"></i></a>
     <a href="https://www.snapchat.com/add/MikeBert97" target="_blank" title="Snapchat"><i class="fa fa-snapchat w3-hover-opacity"></i></a>
     <a href="https://www.soundcloud.com/official-electrix" target="_blank" title="Soundcloud"><i class="fa fa-soundcloud w3-hover-opacity"></i></a>
     <a href="https://open.spotify.com/user/1226190440?si=kp3XkoE9QQu8QqTSJEtcoA" target="_blank" title="Spotify"><i class="fa fa-spotify w3-hover-opacity"></i></a>
     <a href="https://steamcommunity.com/id/theshadows97/" target="_blank" title="Steam"><i class="fa fa-steam w3-hover-opacity"></i></a>
   </div>
-  <p><a title="Website up to date as of 6/13/19 @ 7:00 PM EST" class="w3-hover-text-green">
-  Website up to date as of 6/13/19 @ 7:00 PM EST</a></p>
+  <p><a title="Website up to date as of 7/1/19 @ 12:02 PM EST" class="w3-hover-text-green">
+  Website up to date as of 7/1/19 @ 12:02 PM EST</a></p>
 </footer>
 
 <!-- Add Google Maps -->
@@ -926,5 +926,7 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 // Updated Website to reflect having graduated
 // Updated Resume Link
 // Updated Google Maps Tag to show have moved back home
+// Version 1.14 (7/1/19)
+// Updated Resume Link again
 </section>
 -->
